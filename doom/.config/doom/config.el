@@ -33,7 +33,7 @@
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
 (setq doom-theme 'catppuccin)
-(setq catppuccin-flavor 'mocha) ;; or 'latte, 'macchiato, or 'mocha, 'frappe
+(setq catppuccin-flavor 'frappe) ;; or 'latte, 'macchiato, or 'mocha, 'frappe
         (load-theme 'catppuccin t)
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
@@ -44,6 +44,13 @@
 ;; change `org-directory'. It must be set before org loads!
 (setq org-directory "~/org/")
 
+;; all the icons setup
+(use-package all-the-icons
+  :if (display-graphic-p))
+
+;; neotree configuration
+(setq neo-window-position 'right)
+(setq neo-theme (if (display-graphic-p) 'nerd-icons))
 
 ;; Whenever you reconfigure a package, make sure to wrap your config in an
 ;; `after!' block, otherwise Doom's defaults may override your settings. E.g.
