@@ -45,8 +45,8 @@
 (setq org-directory "~/org/")
 
 ;; all the icons setup
-(use-package all-the-icons
-  :if (display-graphic-p))
+;; (use-package all-the-icons
+;;   :if (display-graphic-p))
 
 ;; neotree configuration
 (setq neo-window-position 'right)
