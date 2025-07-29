@@ -50,7 +50,9 @@
 
 ;; neotree configuration
 (setq neo-window-position 'right)
+(setq neo-window-width 50)
 (setq neo-theme (if (display-graphic-p) 'nerd-icons))
+
 
 ;; Whenever you reconfigure a package, make sure to wrap your config in an
 ;; `after!' block, otherwise Doom's defaults may override your settings. E.g.
