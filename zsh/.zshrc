@@ -11,7 +11,7 @@ source /home/sdaniil/Repos/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="robbyrussell"
 
-plugins=(git archlinux)
+plugins=(git archlinux poetry)
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -73,7 +73,6 @@ plugins=(git archlinux)
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -111,3 +110,6 @@ export PATH=$PATH:/home/sdaniil/.config/emacs/bin
 export PATH=$PATH:/home/sdaniil/work/go/bin
 export PAGER=cat
 export GOPATH=~/work/go
+
+# Created by `pipx` on 2025-04-08 13:56:51
+export PATH="$PATH:/home/sdaniil/.local/bin"
