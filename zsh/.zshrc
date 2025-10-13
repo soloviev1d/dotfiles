@@ -3,15 +3,17 @@
 
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
-source /home/sdaniil/Repos/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
-
-plugins=(git archlinux poetry)
+plugins=(
+    git
+    archlinux
+    poetry
+    zsh-autosuggestions
+)
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -113,3 +115,19 @@ export GOPATH=~/work/go
 
 # Created by `pipx` on 2025-04-08 13:56:51
 export PATH="$PATH:/home/sdaniil/.local/bin"
+eval "$(starship init zsh)"
+
+alias ls="eza --icons"
+# Hyprland colors
+source ~/.config/zshrc.d/dots-hyprland.zsh
+# rm later, lab functions
+source ~/Repos/kfs-mag/bash-libs/kfslibs.sh
+
+
+# BEGIN opam configuration
+# This is useful if you're using opam as it adds:
+#   - the correct directories to the PATH
+#   - auto-completion for the opam binary
+# This section can be safely removed at any time if needed.
+[[ ! -r '/home/sdaniil/.opam/opam-init/init.zsh' ]] || source '/home/sdaniil/.opam/opam-init/init.zsh' > /dev/null 2> /dev/null
+# END opam configuration
