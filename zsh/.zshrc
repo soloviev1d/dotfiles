@@ -131,3 +131,4 @@ source ~/Repos/kfs-mag/bash-libs/kfslibs.sh
 # This section can be safely removed at any time if needed.
 [[ ! -r '/home/sdaniil/.opam/opam-init/init.zsh' ]] || source '/home/sdaniil/.opam/opam-init/init.zsh' > /dev/null 2> /dev/null
 # END opam configuration
+eval $(opam env)

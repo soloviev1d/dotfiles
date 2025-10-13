@@ -85,3 +85,10 @@
 ;;
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
+;; add csharp to projectile
+;; .NET C# or F# projects
+;; (projectile-register-project-type 'dotnet #'projectile-dotnet-project-p
+;;                                   :project-file '("?*.csproj" "?*.fsproj")
+;;                                   :compile "dotnet build"
+;;                                   :run "dotnet run"
+;;                                   :test "dotnet test")
