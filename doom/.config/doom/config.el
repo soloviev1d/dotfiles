@@ -21,7 +21,7 @@
 ;; See 'C-h v doom-font' for documentation and more examples of what they
 ;; accept. For example:
 ;;
-;;(setq doom-font (font-spec :family "Fira Code" :size 12 :weight 'semi-light)
+;; (setq doom-font (font-spec :family "Fira Code" :size 16 :weight 'semi-light)
 ;;      doom-variable-pitch-font (font-spec :family "Fira Sans" :size 13))
 ;;
 ;; If you or Emacs can't find your font, use 'M-x describe-font' to look them
@@ -32,9 +32,13 @@
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
-(setq doom-theme 'catppuccin)
-(setq catppuccin-flavor 'frappe) ;; or 'latte, 'macchiato, or 'mocha, 'frappe
-        (load-theme 'catppuccin t)
+;; (setq doom-theme 'catppuccin)
+;; (setq catppuccin-flavor 'frappe) ;; or 'latte, 'macchiato, or 'mocha, 'frappe
+;;         (load-theme 'catppuccin t)
+
+;; Rose pine
+;; https://github.com/donniebreve/rose-pine-doom-emacs
+(setq doom-theme 'doom-rose-pine)
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
@@ -43,6 +47,9 @@
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
 (setq org-directory "~/org/")
+
+;; Projectile search path
+(setq projectile-project-search-path '("~/code/"))
 
 ;; all the icons setup
 ;; (use-package all-the-icons
@@ -85,6 +92,8 @@
 ;;
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
+<<<<<<< HEAD
+<<<<<<< HEAD
 ;; add csharp to projectile
 ;; .NET C# or F# projects
 ;; (projectile-register-project-type 'dotnet #'projectile-dotnet-project-p
@@ -92,3 +101,13 @@
 ;;                                   :compile "dotnet build"
 ;;                                   :run "dotnet run"
 ;;                                   :test "dotnet test")
+=======
+
+;; Не работает, а хотелось бы...
+(setq fancy-splash-image (concat doom-user-dir "splash.png"))
+>>>>>>> 3bb37c9 (ADD splash + rose pine)
+=======
+
+;; Не работает, а хотелось бы...
+(setq fancy-splash-image (concat doom-user-dir "splash.png"))
+>>>>>>> 3bb37c9 (ADD splash + rose pine)
